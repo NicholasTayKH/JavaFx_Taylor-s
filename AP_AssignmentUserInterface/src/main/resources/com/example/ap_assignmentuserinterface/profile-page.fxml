@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Circle?>
+<StackPane fx:id="rootPane"
+           xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.ap_assignmentuserinterface.ProfileController">
+    <AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: #D3D3D3;">
+
+        <!-- Sidebar Logo -->
+        <HBox layoutX="223" layoutY="14" prefWidth="345" prefHeight="42" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-radius: 10;"/>
+        <HBox layoutX="745" layoutY="16" prefWidth="40" prefHeight="38" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-radius: 10;"/>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="800.0" spacing="182">
+            <!-- Logo -->
+            <ImageView fitHeight="50" fitWidth="40">
+                <image>
+                    <Image url="@images/HomeLogo.png" />
+                </image>
+            </ImageView>
+            <!-- Center icons -->
+            <HBox alignment="CENTER" prefHeight="50" spacing="100" >
+                <!-- Home -->
+                <!-- Home -->
+                <VBox alignment="CENTER" spacing="0">
+                    <Button fx:id="homeButton" style="-fx-background-color: transparent;" onAction="#goHome">
+                        <graphic>
+                            <ImageView fitHeight="25" fitWidth="25">
+                                <image><Image url="@images/Home.png" /></image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Region prefHeight="4" prefWidth="30" style="-fx-background-color: transparent; -fx-background-radius: 2;" />
+                </VBox>
+
+                <!-- Booking -->
+                <VBox alignment="CENTER" spacing="0">
+                    <Button fx:id="bookingButton" style="-fx-background-color: transparent;" onAction="#goBooking">
+                        <graphic>
+                            <ImageView fitHeight="25" fitWidth="25">
+                                <image><Image url="@images/Booking.png" /></image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Region prefHeight="4" prefWidth="30" style="-fx-background-color: transparent; -fx-background-radius: 2;" />
+                </VBox>
+
+                <!-- Profile -->
+                <VBox alignment="CENTER" spacing="0">
+                    <Button fx:id="profileButton" style="-fx-background-color: transparent;">
+                        <graphic>
+                            <ImageView fitHeight="25" fitWidth="25">
+                                <image><Image url="@images/Profile.png" /></image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Region prefHeight="4" prefWidth="30" style="-fx-background-color: #4285F4; -fx-background-radius: 2;" />
+                </VBox>
+
+            </HBox>
+
+            <!-- Notification icon -->
+            <Button fx:id="notificationButton" style="-fx-background-color: transparent;" onAction="#showNotificationPanel">
+                <graphic>
+                    <ImageView fitHeight="30" fitWidth="30">
+                        <image>
+                            <Image url="@images/Notification.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+
+
+        <!-- Chatbot Icon (Bottom-Right) -->
+        <Button fx:id="chatbotButton" layoutX="750" layoutY="550" style="-fx-background-color: transparent;" onAction="#showChatbotPanel">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30">
+                    <image>
+                        <Image url="@images/Chatbot.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <!-- Logout Button -->
+        <Button fx:id="logoutButton"
+                layoutX="250"
+                layoutY="110"
+                text="Logout"
+                onAction="#handleLogout"
+                style="-fx-background-color: #ffffff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-weight: bold;" />
+
+        <StackPane layoutX="320" layoutY="110" prefWidth="150" prefHeight="150">
+            <!-- Background Circle -->
+            <Circle radius="75" fill="#e0e0e0"/>
+
+            <!-- Clipped Image -->
+            <ImageView fx:id="profileImageView" fitWidth="130" fitHeight="130" preserveRatio="true">
+                <image>
+                    <Image url="@images/ProfileAvatar.png" />
+                </image>
+            </ImageView>
+        </StackPane>
+
+        <!-- Settings Gear Icon -->
+        <Button fx:id="settingsButton"
+                layoutX="475" layoutY="110"
+                onAction="#handleOpenSettings"
+                style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitHeight="24" fitWidth="24">
+                    <image>
+                        <Image url="@images/SettingIcon.png" /> <!-- Replace with your settings icon -->
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <!-- Settings editor -->
+        <AnchorPane fx:id="settingsPane" layoutX="100" layoutY="100" prefWidth="600" prefHeight="500"
+                    style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-color: #ccc; -fx-border-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 4);"
+                    visible="false" mouseTransparent="true">
+
+            <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="30">
+
+                <Label text="Settings" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Username:" prefWidth="120" />
+                    <TextField fx:id="usernameField" prefWidth="300" />
+                </HBox>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Email:" prefWidth="120" />
+                    <TextField fx:id="emailField" prefWidth="300" />
+                </HBox>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Age:" prefWidth="120" />
+                    <TextField fx:id="ageField" prefWidth="300" />
+                </HBox>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Phone Number:" prefWidth="120" />
+                    <TextField fx:id="phoneField" prefWidth="300" />
+                </HBox>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="IC/Passport:" prefWidth="120" />
+                    <TextField fx:id="icPassportField" prefWidth="300" />
+                </HBox>
+
+                <HBox spacing="20" alignment="CENTER" layoutY="10">
+                    <Button fx:id="settingsSave" text="Save" onAction="#handleSaveSettings"
+                            style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 10;" />
+                    <Button fx:id="settingsCancel" text="Cancel" onAction="#handleCancelSettings"
+                            style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-background-radius: 10;" />
+                </HBox>
+
+            </VBox>
+        </AnchorPane>
+
+
+
+        <!-- Tab Buttons (Details / Bookings / History) -->
+        <HBox layoutX="300" layoutY="280" spacing="20">
+            <Button fx:id="detailsTab" text="Details"
+                    onAction="#showDetailsPane"
+
+            />
+            <Button fx:id="bookingsTab" text="Bookings"
+                    onAction="#showBookingsPane"   />
+
+            <Button fx:id="historyTab" text="History"
+                    onAction="#showHistoryPane"   />
+
+        </HBox>
+
+        <!-- Scrollable Panes (Only One Visible at a Time) -->
+        <ScrollPane fx:id="detailsPane" layoutX="150" layoutY="310" prefWidth="500" prefHeight="280"
+                    style="-fx-background-radius: 10; -fx-border-radius: 10;" fitToWidth="true">
+            <content>
+                <VBox fx:id="detailsContent" style="-fx-padding: 20;" alignment="TOP_CENTER" spacing="15">
+
+                    <Label text="User ID:" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+                    <Label fx:id="userIdLabel" style="-fx-font-size: 20px;" translateY="-15"/>
+
+                    <Label text="Username:" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+                    <Label fx:id="usernameLabel" style="-fx-font-size: 20px;" translateY="-15"/>
+
+                    <Label text="Email:" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+                    <Label fx:id="emailLabel" style="-fx-font-size: 20px;" translateY="-15"/>
+
+                    <Label text="Age:" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+                    <Label fx:id="ageLabel" style="-fx-font-size: 20px;" translateY="-15"/>
+
+                    <Label text="IC/Passport:" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+                    <Label fx:id="icPassportLabel" style="-fx-font-size: 20px;" translateY="-15"/>
+
+                    <Label text="Phone Number:" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+                    <Label fx:id="phoneLabel" style="-fx-font-size: 20px;" translateY="-15"/>
+
+                </VBox>
+            </content>
+        </ScrollPane>
+
+
+
+        <ScrollPane fx:id="bookingsPane" layoutX="150" layoutY="310" prefWidth="500" prefHeight="280"
+                    visible="false" fitToWidth="true">
+            <VBox fx:id="bookingsContent" spacing="15" style="-fx-padding: 10;">
+                <!-- Booking cards will be added dynamically in the controller using User ID -->
+            </VBox>
+        </ScrollPane>
+
+
+        <ScrollPane fx:id="historyPane" layoutX="150" layoutY="310" prefWidth="500" prefHeight="280"
+                    visible="false">
+            <VBox fx:id="historyContent" spacing="10" style="-fx-padding: 10;" />
+        </ScrollPane>
+
+
+    </AnchorPane>
+    <AnchorPane fx:id="notificationPanel" layoutY="-600" prefHeight="600" prefWidth="800"
+                style="-fx-background-color: rgba(255, 255, 255, 0.95); -fx-border-color: lightgray;">
+        <HBox layoutX="0" layoutY="0" prefHeight="50" prefWidth="800" alignment="CENTER">
+            <Label text="Notifications" layoutX="20" layoutY="20" style="-fx-font-size: 18px;"/>
+        </HBox>
+
+        <HBox layoutX="0" layoutY="550" prefWidth="800" prefHeight="20" alignment="CENTER">
+            <Button fx:id="collapseNotificationButton" layoutX="760" layoutY="10" text="↑"
+                    onAction="#hideNotificationPanel"
+                    style="-fx-background-color: transparent;
+               -fx-text-fill: #555;
+               -fx-font-size: 18px;
+               -fx-font-weight: bold;
+               -fx-cursor: hand;"/>
+        </HBox>
+        <ScrollPane fx:id="notificationScrollPane"
+                    layoutX="50"
+                    layoutY="50"
+                    prefWidth="700"
+                    prefHeight="500"
+                    style="-fx-background-color: transparent;-fx-background: transparent;-fx-border-color: transparent;-fx-border-radius: 20;-fx-background-radius: 20;-fx-padding: 10;"
+                    styleClass="custom-scroll-pane">
+            <VBox fx:id="notificationContainer"
+                  spacing="20"
+                  style="-fx-background-color: transparent; -fx-padding: 20px;">
+            </VBox>
+        </ScrollPane>
+    </AnchorPane>
+    <AnchorPane fx:id="chatbotPanel" layoutX="800" layoutY="0" prefHeight="600" prefWidth="300"
+                style="-fx-background-color: rgba(255,255,255,0.95); -fx-border-color: gray;">
+        <HBox layoutX="70" layoutY="0" prefWidth="645" prefHeight="50" alignment="CENTER">
+            <Label text="Chatbot" layoutX="20" layoutY="20" style="-fx-font-size: 18px;"/>
+        </HBox>
+
+        <VBox layoutX="0" layoutY="0" prefHeight="550" prefWidth="20" alignment="CENTER">
+            <Button fx:id="collapseChatBotButton" text="➔"
+                    onAction="#hideChatbotPanel"
+                    style="-fx-background-color: transparent;
+               -fx-text-fill: #555;
+               -fx-font-size: 24px;
+               -fx-font-weight: bold;
+               -fx-cursor: hand;" />
+        </VBox>
+
+        <ScrollPane fx:id="chatScrollPane"
+                    layoutX="70" layoutY="50"
+                    prefHeight="450" prefWidth="675"
+                    fitToWidth="true"
+                    style="-fx-background-color: #444444;
+                   -fx-background: transparent;
+                   -fx-border-color: transparent;
+                   -fx-border-radius: 20;
+                   -fx-background-radius: 20;
+                   -fx-padding: 10;"
+                    styleClass="custom-scroll-pane">
+            <content>
+                <VBox fx:id="chatContainer" spacing="20" style="-fx-background-color: transparent; -fx-padding: 20;">
+                    <HBox fx:id="aiChatLayer" alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                        <HBox fx:id="aiChatBubble" alignment="CENTER_LEFT"
+                              style="-fx-background-color: #90EE90; -fx-padding: 12; -fx-background-radius: 30; -fx-margin: 10;">
+                            <Text fx:id="aiChatText" text="Hi, I am your personalized assistant. How may I help you?"/>
+                        </HBox>
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+        <!-- Input Area -->
+        <HBox layoutX="70" layoutY="500" prefWidth="675" prefHeight="100" alignment="CENTER" spacing="5" style="-fx-padding: 10;">
+            <TextField fx:id="userInputField"
+                       promptText="Type a message..."
+                       prefWidth="600"
+                       style="-fx-background-color: #f0f0f0;
+                  -fx-background-radius: 30;
+                  -fx-border-radius: 30;
+                  -fx-border-color: #4285F4;
+                  -fx-border-width: 2;
+                  -fx-text-fill: #333;
+                  -fx-prompt-text-fill: #999;
+                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);"/>
+
+            <Button fx:id="sendButton" text="Send" onAction="#handleSendMessage"
+                    style="-fx-background-color: #4285F4;
+                   -fx-text-fill: white;
+                   -fx-font-weight: bold;
+                   -fx-background-radius: 30;
+                   -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);"/>
+        </HBox>
+    </AnchorPane>
+</StackPane>

@@ -1,0 +1,3 @@
+Free Cancellation,50
+Complimentary Breakfast,20
+Standard Package,0

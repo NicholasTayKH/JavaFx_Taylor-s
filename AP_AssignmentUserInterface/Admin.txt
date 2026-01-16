@@ -1,0 +1,10 @@
+1,admin1,cjj,chewjingjing1005@gmail.com
+2,admin2,password2,admin2@example.com
+3,admin3,password3,admin3@example.com
+4,jjj,zzz,chewjingjing1005@gmail.com
+5,sss,sss,chewjingjing1005@gmail.com
+6,yyy,yyy,jychew149@gmail.com
+7,1234,1234,nicholastay666@gmail.com
+8,chew,111,chewjingjing1005@gmail.com
+9,chew111,aaa,chewjingjing1005@gmail.com
+10,jychew,jychew,jychew149@gmail.com

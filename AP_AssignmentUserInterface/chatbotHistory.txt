@@ -1,0 +1,20 @@
+--user--
+hi
+--ai--
+Hi! How can I assist you today with your profile or bookings? Here’s a quick overview of what you can do:
+
+1. **Profile Management**:
+   - You can update your personal information (like name, email, phone).
+   - Check your current booking and either cancel or edit it.
+   - View a read-only list of your booking history.
+
+2. **Booking Services**:
+   - Create new bookings using our calendar picker and select your desired time slot.
+   - Confirm your booking easily with the 'Book Now' button.
+
+3. **Chatbot Commands**:
+   - If you want to **show your profile**, just type "Show my profile."
+   - To **book an appointment**, you can say "I want to book."
+   - For managing bookings, you can use commands like "Cancel my last booking" or "Update the date for my upcoming booking."
+
+If you have specific requests or questions, feel free to ask!

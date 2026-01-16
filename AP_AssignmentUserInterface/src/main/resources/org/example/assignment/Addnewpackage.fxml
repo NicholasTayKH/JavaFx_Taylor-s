@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane  xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.assignment.controller.AddPackagesController"
+            prefHeight="300.0" prefWidth="500.0 ">
+
+    <center>
+        <VBox spacing="10.0" >
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <Label text="Packages">
+                    <font>
+                        <Font size="52.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-font-weight: bold;" text="Name" />
+                <TextField fx:id="nameField" promptText="Packages Name" />
+
+                <Label style="-fx-font-weight: bold;" text="Price" />
+                <TextField fx:id="priceField" promptText="Price" />
+
+                <HBox alignment="CENTER_RIGHT" spacing="10.0" >
+                    <children>
+                        <Button fx:id="cancelButton" onAction="#handleCancel" text="Cancel" style="-fx-background-color: #e0986e;" />
+                        <Button onAction="#handleSave" text="Save"  style="-fx-background-color: #95dea8;"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

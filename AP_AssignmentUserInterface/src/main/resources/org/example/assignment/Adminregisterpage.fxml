@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="org.example.assignment.controller.AdminRegisterController">
+
+    <AnchorPane prefHeight="600.0" prefWidth="800.0">
+        <ImageView fitHeight="600" fitWidth="800">
+            <image>
+                <Image url="https://wallpaperbat.com/img/54238761-beach-resorts-1-definition-wallpaper.jpg"/>
+            </image>
+        </ImageView>
+
+        <Button fx:id="backButton" layoutX="20.0" layoutY="20.0" text="← Back"
+                style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;"
+                onAction="#handleBack"/>
+
+        <Label layoutX="291.0" layoutY="20.0" text="Register an Account" textFill="BLACK">
+            <font><Font size="25"/></font>
+        </Label>
+
+        <Text fill="WHITE" layoutX="376.0" layoutY="128.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Email"/>
+        <TextField fx:id="emailField" layoutX="250" layoutY="133" prefHeight="40" prefWidth="300"
+                   style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: gray; -fx-border-width: 1;"/>
+
+        <Text fill="WHITE" layoutX="357.0" layoutY="214.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Username"/>
+        <TextField fx:id="usernameField" layoutX="250" layoutY="219" prefHeight="40" prefWidth="300"
+                   style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: gray; -fx-border-width: 1;"/>
+        <Label fx:id="usernameMatchLabel" layoutX="250" layoutY="269" text=""/>
+
+        <Text fill="WHITE" layoutX="359.0" layoutY="300.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Password"/>
+        <PasswordField fx:id="passwordField" layoutX="250" layoutY="305" prefHeight="40" prefWidth="300"
+                       style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: gray; -fx-border-width: 1;"/>
+
+        <Text fill="WHITE" layoutX="331.0" layoutY="387.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Confirm Password"/>
+        <PasswordField fx:id="confirmPasswordField" layoutX="250" layoutY="392" prefHeight="40" prefWidth="300"
+                       style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: gray; -fx-border-width: 1;"/>
+        <Label fx:id="passwordMatchLabel" layoutX="250" layoutY="435" text=""/>
+
+        <Button fx:id="submitButton" layoutX="346.0" layoutY="474.0" prefHeight="30" prefWidth="100"
+                style="-fx-background-color: #48CAE4; -fx-border-radius: 50px;" text="Send Code" textFill="WHITE"
+                onAction="#handleSubmit"/>
+        <Label fx:id="emailVerifyLabel" layoutX="346.0" layoutY="510.0" text=""/>
+    </AnchorPane>
+
+    <AnchorPane fx:id="overlayPane" visible="false" prefHeight="600" prefWidth="800"
+                style="-fx-background-color: rgba(0, 0, 0, 0.5);">
+        <Button layoutX="240" layoutY="170" text="Cancel" onAction="#handleBack"
+                style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <VBox alignment="CENTER" spacing="15.0" layoutX="300" layoutY="200"
+              style="-fx-background-color: white; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <Label text="Enter Verification Code" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <TextField fx:id="codeField" promptText="Verification Code"/>
+            <Label fx:id="codeMatchLabel" text=""/>
+            <Button fx:id="verifyCodeButton" text="Verify" onAction="#handleVerifyCode"
+                    style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;"/>
+        </VBox>
+    </AnchorPane>
+</StackPane>

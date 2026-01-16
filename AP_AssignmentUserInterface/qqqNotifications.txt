@@ -1,0 +1,9 @@
+1,"Welcome!","Your account has been successfully created.","2025-07-12T01:31:53.917411600",false
+2,"Finish Setting Up your Account","Setup your profile in the profile page.","2025-07-12T01:31:53.918625400",false
+3,"Booking Comfirmed !","Start date:2025-07-25 | 2Nights | 1 Deluxe King","2025-07-12T01:32:42.126248500",false
+4,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-12T01:33:57.609374100",false
+5,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-12T01:34:08.345043700",false
+6,"Booking Modification Approved","Your booking modification has been approved and updated.","2025-07-12T02:12:13.965119800",false
+7,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-12T02:20:59.599439100",false
+8,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-12T02:44:40.473529200",false
+9,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-13T04:53:28.757744",false

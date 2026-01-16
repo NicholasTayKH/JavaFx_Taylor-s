@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.assignment.controller.ViewProfileBookingController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #013578;">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10"/>
+            </padding>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Titan's Admin" textFill="WHITE" />
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button fx:id="homeButton" onAction="#handleHome" text="🏠" style="-fx-background-color: #FF7F50;"/>
+            <Button fx:id="manageRoomsButton" onAction="#handleManageRooms" text="📄" style="-fx-background-color: #ccbe66;"/>
+            <Button text="👤" style="-fx-background-color: #9966CC;"/>
+            <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" style="-fx-background-color:#b56470"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <content>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </padding>
+
+                    <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="760.0">
+                        <children>
+                            <Button mnemonicParsing="false" text="Back" onAction="#handleBack" style="-fx-background-color: #c4ecff;"/>
+                            <Label contentDisplay="CENTER" style="-fx-font-size: 20px; -fx-font-weight: bold;"
+                                   text="Customer Booking History" textAlignment="CENTER">
+                                <HBox.margin>
+                                    <Insets left="200.0"/>
+                                </HBox.margin>
+                            </Label>
+                            <Button mnemonicParsing="false" text="Delete" onAction="#handleDelete" style="-fx-background-color: #db6767 ;">
+                                <HBox.margin>
+                                    <Insets left="197.0" top="5.0"/>
+                                </HBox.margin>
+                            </Button>
+                        </children>
+                    </HBox>
+
+                    <VBox alignment="TOP_CENTER" prefHeight="194.0" prefWidth="760.0" style="-fx-background-color: #2222;">
+                        <children>
+                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@profile.png"/>
+                                </image>
+                            </ImageView>
+                            <Label text="Profile Photo"/>
+                            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                <children>
+                                    <Button fx:id="detailsBtn" mnemonicParsing="false" text="Details" style="-fx-background-color: #87CEEB;" />
+                                    <Button fx:id="bookingBtn" mnemonicParsing="false" text="Bookings" style="-fx-background-color: #FFD580;"/>
+                                    <Button fx:id="historyBtn" mnemonicParsing="false" text="History" style="	-fx-background-color: #e6ffc4;"/>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+
+                    <StackPane fx:id="contentPane" prefHeight="150.0" prefWidth="200.0">
+                        <children>
+
+                            <!-- DETAILS Section -->
+                            <VBox fx:id="detailsSection" spacing="10.0">
+                                <padding>
+                                    <Insets left="20.0" top="20.0"/>
+                                </padding>
+                                <children>
+                                    <Label text="Details Section"/>
+                                    <VBox alignment="TOP_LEFT" prefWidth="700" spacing="15.0"
+                                          style="-fx-background-color: #f9f9f9; -fx-padding: 20; -fx-background-radius: 10;">
+                                        <children>
+                                            <HBox spacing="10">
+                                                <Label text="Full Name:"/>
+                                                <Label fx:id="nameLabel" text="Name"/>
+                                            </HBox>
+                                            <HBox spacing="10">
+                                                <Label text="Email:"/>
+                                                <Label fx:id="emailLabel" text="Email"/>
+                                            </HBox>
+                                            <HBox spacing="10">
+                                                <Label text="Phone Number:"/>
+                                                <Label fx:id="phoneLabel" text="Phone"/>
+                                            </HBox>
+                                            <HBox spacing="10">
+                                                <Label text="Date of Birth:"/>
+                                                <Label fx:id="dobLabel" text="DOB"/>
+                                            </HBox>
+                                        </children>
+                                    </VBox>
+                                </children>
+                            </VBox>
+
+                            <!-- BOOKINGS Section -->
+                            <VBox fx:id="bookingSection" spacing="10.0" visible="false" managed="false">
+                                <padding>
+                                    <Insets left="20.0" top="20.0"/>
+                                </padding>
+                                <children>
+                                    <Label text="Booking Section"/>
+                                    <VBox fx:id="bookingSectionContent" alignment="TOP_LEFT" prefWidth="700" spacing="15.0"
+                                          style="-fx-background-color: #f9f9f9; -fx-padding: 20; -fx-background-radius: 10;"/>
+                                </children>
+                            </VBox>
+
+                            <!-- HISTORY Section -->
+                            <VBox fx:id="historySection" spacing="10.0" visible="false" managed="false">
+                                <padding>
+                                    <Insets left="20.0" top="20.0"/>
+                                </padding>
+                                <children>
+                                    <Label text="History Section"/>
+                                    <VBox fx:id="historySectionContent" alignment="TOP_LEFT" prefWidth="700" spacing="15.0"
+                                          style="-fx-background-color: #f9f9f9; -fx-padding: 20; -fx-background-radius: 10;"/>
+                                </children>
+                            </VBox>
+
+                        </children>
+                    </StackPane>
+
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,8 @@
+1,"Welcome!","Your account has been successfully created.","2025-07-13T04:50:18.691745900",false
+2,"Finish Setting Up your Account","Setup your profile in the profile page.","2025-07-13T04:50:18.694392900",false
+3,"Booking Comfirmed !","Start date:2025-07-24 | 1Nights | 1 3 Person Room","2025-07-13T04:52:17.604456600",false
+4,"Booking Modification Approved","Your booking modification has been approved and updated.","2025-07-13T04:52:31.901030",false
+5,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-13T04:52:47.321642500",false
+6,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-13T04:53:28.757744",false
+7,"User Details Updated!","Your new user details are updated","2025-07-13T04:54:57.314827400",false
+8,"Booking Comfirmed !","Start date:2025-07-16 | 1Nights | 1 3 Person Room","2025-07-13T14:17:05.278766300",false

@@ -1,0 +1,24 @@
+1,"Welcome!","Your account has been successfully created.","2025-07-10T17:42:56.592985",false
+2,"Finish Setting Up your Account","Setup your profile in the profile page.","2025-07-10T17:42:56.597694",false
+3,"Booking Comfirmed !","Start date:2025-07-17 | 13Nights | 1 Two Person","2025-07-10T20:52:39.483768500",false
+4,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:02:58.810246300",false
+5,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:06:43.988863300",false
+6,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:12:10.568161900",false
+7,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:18:28.241107400",false
+8,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:27:29.486313",false
+9,"Enquiry Replied!","Your enquiry has been answered. Please check the FAQ section.","2025-07-10T21:27:40.879999100",false
+10,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:46:30.504864",false
+11,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:54:17.524109900",false
+12,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-10T21:54:25.538960100",false
+13,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-10T21:55:23.833745500",false
+14,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:55:57.358214900",false
+15,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-10T21:56:11.169638500",false
+16,"Question Uploaded!","You had provided a question, you can check your question in the Faq section!","2025-07-10T21:56:40.205586700",false
+17,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-10T21:56:56.905544100",false
+18,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-10T22:00:55.364422300",false
+19,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-10T22:09:54.613378900",false
+20,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-11T06:11:56.168519",false
+21,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-12T01:34:08.341353",false
+22,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-12T02:20:59.597354100",false
+23,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-12T02:44:40.469849500",false
+24,"FAQ Updated","A new FAQ has been answered. Please check the FAQ section.","2025-07-13T04:53:28.754306900",false

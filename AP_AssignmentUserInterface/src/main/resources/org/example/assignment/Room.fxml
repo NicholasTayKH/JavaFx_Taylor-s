@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment.controller.RoomController">
+
+    <children>
+        <BorderPane prefHeight="600.0" prefWidth="800.0">
+
+            <!-- Top Bar -->
+            <top>
+                <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #013578;">
+                    <padding>
+                        <Insets bottom="10" left="10" right="10" top="10" />
+                    </padding>
+                    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Titan's Admin" textFill="WHITE" />
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Button fx:id="homeButton" onAction="#handleHome" text="🏠" style="-fx-background-color: #FF7F50;" />
+                    <Button text="📄" style="-fx-background-color: #ccbe66;"/>
+                    <Button fx:id="viewProfileButton" onAction="#handleViewProfile" text="👤" style="-fx-background-color: #9966CC;" />
+                    <Button fx:id="logoutButton" onAction="#handleLogout" text="Logout" style="-fx-background-color:#b56470"/>
+                </HBox>
+            </top>
+
+            <!-- Main Content -->
+            <center>
+                <ScrollPane fitToWidth="true">
+                    <content>
+                        <VBox alignment="CENTER" prefHeight="763.0" prefWidth="985.0" spacing="30">
+
+                            <!-- Add Room Button -->
+                            <Button fx:id="addRoomButton" onAction="#handleAddRoom" prefHeight="30" prefWidth="150" style="-fx-font-size: 16px; -fx-background-radius: 10px; -fx-background-color: #a1d6a5;" text="Add New Room +">
+                                <VBox.margin>
+                                    <Insets left="400.0" />
+                                </VBox.margin>
+                            </Button>
+
+                            <!-- Rooms Section -->
+                            <Label text="Rooms">
+                                <font>
+                                    <Font size="39.0" />
+                                </font>
+                            </Label>
+                            <VBox fx:id="roomsContainer" alignment="CENTER" spacing="40" />
+
+                            <!-- Add Package Button -->
+                            <Button fx:id="addPackageButton" onAction="#handleAddPackage" prefHeight="24.0" prefWidth="168.0" style="-fx-font-size: 16px; -fx-background-radius: 10px; -fx-background-color: #a1d6a5;" text="Add New Package +">
+                                <VBox.margin>
+                                    <Insets left="400.0" />
+                                </VBox.margin>
+                            </Button>
+
+
+                            <!-- Packages Section -->
+                            <Label text="Packages">
+                                <font>
+                                    <Font size="39.0" />
+                                </font>
+                            </Label>
+                            <VBox fx:id="packagesContainer" alignment="CENTER" spacing="40" />
+
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </center>
+
+        </BorderPane>
+    </children>
+
+</AnchorPane>

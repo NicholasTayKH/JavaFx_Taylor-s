@@ -1,0 +1,6 @@
+Single Room,100
+2 Person Room,200
+3 Person Room,300
+Royal Estate,1000
+Divine Bloodline,1500
+Deluxe King,500

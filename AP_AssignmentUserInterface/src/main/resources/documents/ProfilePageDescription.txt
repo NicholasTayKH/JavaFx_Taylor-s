@@ -1,0 +1,27 @@
+Profile Page - Functionality Description
+
+Purpose:
+- Display and manage user profile and booking history.
+
+UI Components:
+- User info (name, email, phone).
+- Editable fields for updating profile.
+- Section: Current Booking (with cancel/edit options).
+- Section: Booking History (read-only list of past bookings).
+
+Features:
+- Modify or cancel upcoming bookings.
+- Update personal information.
+- View summary of all completed bookings.
+
+Chatbot Integration:
+- If user types "Show my profile", redirect to profile page.
+- Chatbot can display summary of bookings in text:
+   "You have 1 upcoming booking on [date], and 3 completed this month."
+- Handle commands like:
+   - "Change my phone number."
+   - "Cancel my current booking."
+
+Back-end:
+- Profile updates saved to user table.
+- Booking cancellations update status in booking table.

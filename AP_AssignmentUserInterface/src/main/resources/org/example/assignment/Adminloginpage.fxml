@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment.controller.AdminLoginController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="800" preserveRatio="false">
+        <image>
+            <Image url="https://wallpaperbat.com/img/54238761-beach-resorts-1-definition-wallpaper.jpg" />
+        </image>
+    </ImageView>
+
+    <ImageView fitHeight="303.0" fitWidth="248.0" layoutX="284.0" layoutY="131.0" preserveRatio="true">
+        <image>
+            <Image url="@images/Logo.png" />
+        </image>
+    </ImageView>
+
+    <!-- Title -->
+    <Label layoutX="339.0" layoutY="141.0" text="Titan’s Resort" textAlignment="CENTER" textFill="white">
+        <font><Font size="24" /></font>
+    </Label>
+
+    <!-- Email Field -->
+    <TextField fx:id="userField" layoutX="170" layoutY="210" prefHeight="40" prefWidth="400" promptText="Enter your username" />
+
+    <!-- Password Field -->
+    <PasswordField fx:id="passwordField" layoutX="170" layoutY="280" prefHeight="40" prefWidth="400" promptText="Enter your password" />
+
+    <!-- Forgot Password -->
+    <Hyperlink fx:id="forgotPassword" layoutX="168.0" layoutY="319.0" onAction="#forgotPassword" text="Forgot Password?" textFill="#fcd9b8">
+        <font>
+            <Font name="System Bold" size="12" />
+        </font>
+    </Hyperlink>
+    <!-- Login Button (Arrow) -->
+    <Button fx:id="loginButton" layoutX="600" layoutY="210" onAction="#handleAdminLogin" prefHeight="110" prefWidth="40" style="-fx-background-color: #87a8d5;" text="➔">
+        <font><Font size="24" /></font>
+    </Button>
+
+    <Label fx:id="loginValidationLabel" layoutX="400.0" layoutY="321.0" text="Invalid username and password" textAlignment="CENTER" />
+
+    <!-- Register Link -->
+    <Label layoutX="250.0" layoutY="551.0" text="Don’t have an account?" textFill="white">
+        <font><Font size="14" /></font>
+    </Label>
+    <Hyperlink fx:id="toSignUp" layoutX="441.0" layoutY="546.0" onAction="#setToAdminRegister" text="Click here to register." textFill="#fcd9b8">
+        <font>
+            <Font name="System Bold" size="16" />
+        </font>
+    </Hyperlink>
+    <Text fill="WHITE" layoutX="170.0" layoutY="206.0" stroke="BLACK" strokeType="OUTSIDE" text="Username" />
+    <Text fill="WHITE" layoutX="170.0" layoutY="274.0" stroke="BLACK" strokeType="OUTSIDE" text="Password" />
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment.controller.EditPackagesController">
+
+    <!-- Optional top label -->
+    <top>
+        <Label prefHeight="84.0" prefWidth="546.0" text="Edit Package" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="52.0" />
+            </font>
+            <padding>
+                <Insets bottom="10" top="20" />
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER_LEFT" spacing="15.0">
+            <padding>
+                <Insets bottom="20" left="40" right="40" top="20" />
+            </padding>
+
+            <Label style="-fx-font-weight: bold;" text="Name:" />
+            <TextField fx:id="nameField" promptText="Package Name" />
+
+            <Label style="-fx-font-weight: bold;" text="Price:" />
+            <TextField fx:id="priceField" promptText="Price" />
+
+            <HBox alignment="CENTER_RIGHT" spacing="15.0">
+                <Button fx:id="deleteButton" onAction="#handleDelete" text="Delete" style="-fx-background-color: #db6767 ;" />
+                <Button fx:id="cancelButton" onAction="#handleCancel" text="Cancel" style="-fx-background-color: #e0986e;" />
+                <Button fx:id="saveButton" defaultButton="true" onAction="#handleSave" text="Save" style="-fx-background-color: #95dea8;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

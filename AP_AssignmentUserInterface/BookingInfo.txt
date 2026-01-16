@@ -1,0 +1,14 @@
+UserID: 5
+Username: jychew
+Name: jychew
+IC/Passport: q
+Phone Number: q
+Start Date: 2025-07-24
+Return Date: 2025-07-25
+Total Night: 1
+Room Type: 2 Person Room
+Number of Rooms: 1
+Travel Package: Complimentary Breakfast
+Payment Method: Online Banking
+Payment Amount: $320.0
+--------------------------------------------------

@@ -1,0 +1,18 @@
+101,Single Room,Available,default_room.png,100
+102,Single Room,Available,default_room.png,100
+103,Single Room,Available,default_room.png,100
+104, 2 Person Room,Available,default_room.png,200
+105, 2 Person Room,Available,default_room.png,200
+106, 2 Person Room,Available,default_room.png,200
+107, 3 Person Room,Available,default_room.png,300
+108, 3 Person Room,Available,default_room.png,300
+109, 3 Person Room,Available,default_room.png,300
+110,Deluxe King,Available,default_room.png,500
+111,Deluxe King,Available,default_room.png,500
+112,Deluxe King,Available,default_room.png,500
+113, Royal Estate,Available,default_room.png,1000
+114, Royal Estate,Available,default_room.png,1000
+115, Royal Estate,Available,default_room.png,1000
+116, Divine Bloodline,Available,default_room.png,1500
+117,Divine Bloodline,Available,default_room.png,1500
+118,Divine Bloodline,Available,default_room.png,1500

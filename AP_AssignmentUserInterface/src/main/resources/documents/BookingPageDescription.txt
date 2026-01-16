@@ -1,0 +1,20 @@
+Booking Page - Functionality Description
+
+Purpose:
+- Allow users to create new bookings.
+
+UI Components:
+- Calendar picker for date selection.
+- Dropdowns or buttons for selecting time slots or services.
+- 'Book Now' button to confirm booking.
+- Confirmation alert on success.
+
+Chatbot Integration:
+- If user types "I want to book", redirect to booking page.
+- AI pre-fills date/time based on chat input (if provided).
+- After booking, AI confirms: "Your booking is set for [date] at [time]."
+
+Back-end:
+- Booking stored in database.
+- Associated with user's profile ID.
+- Validate time slot availability before saving.

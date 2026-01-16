@@ -1,0 +1,26 @@
+AI Chat Bot Features Overview
+
+1. Purpose:
+   - Assist users in navigating the app through chat interface.
+   - Answer common questions.
+   - Help with bookings, profile updates, and viewing history.
+
+2. Capabilities:
+   - Book a service or appointment.
+   - Navigate users to booking page or profile page.
+   - Modify existing bookings (date/time).
+   - View current and past bookings.
+   - Update user profile.
+   - Provide status of upcoming bookings.
+
+3. Sample Commands:
+   - "I want to book an appointment."
+   - "Show my profile."
+   - "Cancel my last booking."
+   - "Update the date for my upcoming booking."
+   - "What have I booked this month?"
+
+4. Backend Flow:
+   - Chatbot processes message.
+   - Based on intent, triggers specific controller (e.g., `BookingController`, `ProfileController`).
+   - Updates UI or shows alert dialog depending on task.
